@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -50,7 +51,7 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.lifecycle.viewmodel.compose.v262)
     implementation(libs.converter.gson.v2110)
     implementation(libs.coil.compose)

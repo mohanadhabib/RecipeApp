@@ -8,8 +8,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.recipeapp.navigation.AppNavigation
 import com.example.recipeapp.ui.theme.RecipeAppTheme
-import com.example.recipeapp.view.CategoryScreen
 import com.example.recipeapp.viewModel.CategoryViewModel
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    CategoryScreen(viewModel = categoryViewModel)
+                    AppNavigation(viewModel = categoryViewModel)
                 }
             }
         }
